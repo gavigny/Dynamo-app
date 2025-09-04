@@ -1,0 +1,343 @@
+[
+    {
+      "id": "script-1",
+      "name": "Add Revision to Sheets",
+      "description": "Adds a new revision to all sheets in the current project.",
+      "tags": [
+        "Revisions",
+        "Sheets"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/sheets.svg"
+    },
+    {
+      "id": "script-2",
+      "name": "Copy Elements from Link File",
+      "description": "Copies elements, such as annotations or specific model components, from a linked file into the host model.",
+      "tags": [
+        "Linked Files",
+        "Modeling"
+      ],
+      "category": "Interoperability",
+      "icon": "/icons/link.svg"
+    },
+    {
+      "id": "script-3",
+      "name": "Create Worksets in Project",
+      "description": "Automates the creation of new worksets based on a predefined list or template.",
+      "tags": [
+        "Collaboration",
+        "Worksets"
+      ],
+      "category": "Management",
+      "icon": "/icons/worksets.svg"
+    },
+    {
+      "id": "script-4",
+      "name": "Dimensions Set Values",
+      "description": "Modifies the text value of selected dimensions to a specified number or text string.",
+      "tags": [
+        "Dimensions",
+        "Annotation"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/dimensions.svg"
+    },
+    {
+      "id": "script-5",
+      "name": "Load all Ann Component",
+      "description": "Loads all annotation components from a specified library into the project.",
+      "tags": [
+        "Annotation",
+        "Content"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/annotation.svg"
+    },
+    {
+      "id": "script-6",
+      "name": "Load all Symbol",
+      "description": "Loads all standard symbols from a library into the current project.",
+      "tags": [
+        "Symbols",
+        "Content"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/symbols.svg"
+    },
+    {
+      "id": "script-7",
+      "name": "Load all Tag",
+      "description": "Loads a collection of tags for various categories into the project.",
+      "tags": [
+        "Tags",
+        "Annotation"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/tags.svg"
+    },
+    {
+      "id": "script-8",
+      "name": "Remove Revision from Sheets",
+      "description": "Removes a specific revision from selected sheets.",
+      "tags": [
+        "Revisions",
+        "Sheets"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/sheets.svg"
+    },
+    {
+      "id": "script-9",
+      "name": "Replace Families Types by Names",
+      "description": "Swaps family types within the model by matching their names.",
+      "tags": [
+        "Families",
+        "Modeling"
+      ],
+      "category": "Content",
+      "icon": "/icons/families.svg"
+    },
+    {
+      "id": "script-10",
+      "name": "Set Assembly Code By Categories",
+      "description": "Assigns assembly codes to model elements based on their category.",
+      "tags": [
+        "Parameters",
+        "BIM"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/assembly.svg"
+    },
+    {
+      "id": "script-11",
+      "name": "Base Plate Modeling",
+      "description": "Automates the placement and configuration of base plates in a structural model.",
+      "tags": [
+        "Structural",
+        "Modeling"
+      ],
+      "category": "Modeling",
+      "icon": "/icons/baseplate.svg"
+    },
+    {
+      "id": "script-12",
+      "name": "Base Plate Set Level",
+      "description": "Sets the level parameter for base plate elements to a specified level.",
+      "tags": [
+        "Structural",
+        "Parameters"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/level.svg"
+    },
+    {
+      "id": "script-13",
+      "name": "Base Plate Set Type",
+      "description": "Assigns the correct family type to base plates based on a predefined set of rules.",
+      "tags": [
+        "Structural",
+        "Parameters"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/type.svg"
+    },
+    {
+      "id": "script-14",
+      "name": "Base Plates Load from Excel",
+      "description": "Imports data from an Excel spreadsheet to create or update base plate elements in the project.",
+      "tags": [
+        "Excel",
+        "Import",
+        "Structural"
+      ],
+      "category": "Interoperability",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-15",
+      "name": "Base Plates Schedules Export to Excel",
+      "description": "Exports base plate schedules from the project to a structured Excel file.",
+      "tags": [
+        "Excel",
+        "Export",
+        "Schedules"
+      ],
+      "category": "Export",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-16",
+      "name": "Base Plates Set Value from Excel",
+      "description": "Updates parameter values for base plate elements using data from an Excel spreadsheet.",
+      "tags": [
+        "Excel",
+        "Parameters",
+        "Structural"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-17",
+      "name": "Roc Anchors Schedules Export to Excel",
+      "description": "Exports rock anchor schedules from the project to an Excel file.",
+      "tags": [
+        "Excel",
+        "Export",
+        "Schedules"
+      ],
+      "category": "Export",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-18",
+      "name": "Roc Anchors Set Value from Excel",
+      "description": "Updates parameter values for rock anchor elements using data from an Excel spreadsheet.",
+      "tags": [
+        "Excel",
+        "Parameters",
+        "Structural"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-19",
+      "name": "Steel Columns Load from Excel",
+      "description": "Imports steel column data from an Excel spreadsheet to create or update column elements.",
+      "tags": [
+        "Excel",
+        "Import",
+        "Structural"
+      ],
+      "category": "Interoperability",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-20",
+      "name": "Steel Columns Schedule Export to Excel",
+      "description": "Exports steel column schedules from the project to a structured Excel file.",
+      "tags": [
+        "Excel",
+        "Export",
+        "Schedules"
+      ],
+      "category": "Export",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-21",
+      "name": "Détails Typiques",
+      "description": "Manages and places typical details from a library onto sheets.",
+      "tags": [
+        "Details",
+        "Views"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/details.svg"
+    },
+    {
+      "id": "script-22",
+      "name": "Export Schedules to Excel",
+      "description": "Exports all schedules from the project into a single or multiple Excel spreadsheets.",
+      "tags": [
+        "Excel",
+        "Export",
+        "Schedules"
+      ],
+      "category": "Export",
+      "icon": "/icons/excel.svg"
+    },
+    {
+      "id": "script-23",
+      "name": "General Notes Update from Excel",
+      "description": "Updates general notes on sheets with content from a specified Excel file.",
+      "tags": [
+        "Notes",
+        "Excel"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/notes.svg"
+    },
+    {
+      "id": "script-24",
+      "name": "Manage Parameters on Sheets",
+      "description": "Manages and standardizes parameters on multiple sheets, ensuring consistency.",
+      "tags": [
+        "Parameters",
+        "Sheets"
+      ],
+      "category": "Data Management",
+      "icon": "/icons/parameters.svg"
+    },
+    {
+      "id": "script-25",
+      "name": "Open Project File Folder",
+      "description": "Quickly opens the folder containing the current project file.",
+      "tags": [
+        "File Management",
+        "Navigation"
+      ],
+      "category": "Productivity",
+      "icon": "/icons/folder.svg"
+    },
+    {
+      "id": "script-26",
+      "name": "Override Annotations in Views on Sheets",
+      "description": "Applies graphic overrides to annotations within views that are placed on sheets.",
+      "tags": [
+        "Views",
+        "Graphics",
+        "Annotations"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/overrides.svg"
+    },
+    {
+      "id": "script-27",
+      "name": "Override Texts in Views on Sheets",
+      "description": "Applies graphic overrides specifically to text elements within views on sheets.",
+      "tags": [
+        "Views",
+        "Graphics",
+        "Text"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/overrides.svg"
+    },
+    {
+      "id": "script-28",
+      "name": "Rename Section Views on Sheers",
+      "description": "Standardizes the naming convention of section views placed on sheets.",
+      "tags": [
+        "Views",
+        "Renaming"
+      ],
+      "category": "Documentation",
+      "icon": "/icons/rename.svg"
+    },
+    {
+      "id": "script-29",
+      "name": "Transfer Legends from File",
+      "description": "Transfers legend views and their contents from one project file to another.",
+      "tags": [
+        "Legends",
+        "Transfer"
+      ],
+      "category": "Content",
+      "icon": "/icons/transfer.svg"
+    },
+    {
+      "id": "script-30",
+      "name": "Views Templates Transfer from File",
+      "description": "Transfers a set of view templates from a source file into the current project.",
+      "tags": [
+        "Views",
+        "Templates",
+        "Transfer"
+      ],
+      "category": "Management",
+      "icon": "/icons/transfer.svg"
+    }
+  ]
