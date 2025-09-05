@@ -8,9 +8,9 @@ function formatMonth(year: number, monthIndex: number): { weeks: (Date | null)[]
 	const label = first.toLocaleDateString(undefined, { month: "long", year: "numeric" });
 	const startDay = (first.getDay() + 6) % 7; // Monday=0
 	const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
-	const cells: (Date | null)[] = Array.from({ length: startDay }, () => null).concat(
-		Array.from({ length: daysInMonth }, (_, i) => new Date(year, monthIndex, i + 1))
-	);
+	const pad: (Date | null)[] = Array.from({ length: startDay }, () => null as null);
+	const days: (Date | null)[] = Array.from({ length: daysInMonth }, (_, i) => new Date(year, monthIndex, i + 1) as Date);
+	const cells: (Date | null)[] = pad.concat(days);
 	while (cells.length % 7 !== 0) cells.push(null);
 	const weeks: (Date | null)[][] = [];
 	for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
