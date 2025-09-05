@@ -1,0 +1,29 @@
+[
+  {
+    "id": "PRJ-001",
+    "material": "Concrete",
+    "embedUrl": "https://app.speckle.systems/projects/8ac9526553/models/aed7823d1a?embedToken=567d754d1500a95e0386b405df7d78dbeb50f398ce#embed=%7B%22isEnabled%22%3Atrue%7D"
+  },
+  {
+    "id": "PRJ-002",
+    "material": "Steel",
+    "embedUrl": "https://app.speckle.systems/projects/8ac9526553/models/f65cc090bb?embedToken=cc3faa0c36a375d949c6994656fd130dd8ee65faf6#embed=%7B%22isEnabled%22%3Atrue%7D"
+  },
+  {
+    "id": "PRJ-003",
+    "material": "Wood",
+    "embedUrl": "https://app.speckle.systems/projects/8ac9526553/models/2169806a1a?embedToken=d92a3f205db47f615f02359f3687fa01882ac535ea#embed=%7B%22isEnabled%22%3Atrue%7D"
+  },
+  {
+    "id": "PRJ-004",
+    "material": "Concrete",
+    "embedUrl": "https://app.speckle.systems/projects/8ac9526553/models/65eade1c09?embedToken=53e240f83404b9224bc5eb905fe212d476bf35f2bd#embed=%7B%22isEnabled%22%3Atrue%7D"
+  },
+  {
+    "id": "PRJ-005",
+    "material": "Steel",
+    "embedUrl": "https://app.speckle.systems/projects/8ac9526553/models/b8bdb4b424?embedToken=3dd5674ce8a7b60f02b2e45cf193f5d56a385db94b#embed=%7B%22isEnabled%22%3Atrue%7D"
+  }
+]
+
+

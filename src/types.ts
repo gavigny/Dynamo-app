@@ -9,3 +9,9 @@ export type Script = {
 	steps?: string[];
 	videoUrl?: string;
 };
+
+export type Project = {
+	id: string; // project number or slug
+	material: "Wood" | "Concrete" | "Steel";
+	embedUrl: string; // Speckle embed URL
+};

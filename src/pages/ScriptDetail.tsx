@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import data from "@/data/scripts.json";
 import type { Script } from "@/types";
 import { Badge } from "@/components/ui/badge";
@@ -31,9 +31,18 @@ function buildIconCandidates(name: string, preferred?: string[]): string[] {
 
 const DEFAULT_VIDEO_URL = "/videos/add-revision-to-sheets.png.mp4"; // global fallback for all scripts
 
+const STORAGE_KEY = "app-scripts";
+
 export default function ScriptDetail() {
 	const { id } = useParams();
-	const scripts: Script[] = data as Script[];
+	const navigate = useNavigate();
+	let scripts: Script[] = data as Script[];
+	try {
+		const saved = localStorage.getItem(STORAGE_KEY);
+		scripts = saved ? (JSON.parse(saved) as Script[]) : (data as Script[]);
+	} catch {
+		// ignore storage errors and use bundled data
+	}
 	const script = useMemo(() => scripts.find((s) => s.id === id), [scripts, id]);
 
 	if (!script) {
@@ -59,7 +68,28 @@ export default function ScriptDetail() {
 
 	return (
 		<div className="mx-auto max-w-4xl px-4 py-8">
-			<Link to="/" className="text-sm underline">← Back</Link>
+			<div className="flex items-center justify-between">
+				<Link to="/" className="text-sm underline">← Back</Link>
+				<button
+					onClick={() => {
+						if (!script) return;
+						const ok = window.confirm("Are you sure you want to remove this script?");
+						if (!ok) return;
+						try {
+							const saved = localStorage.getItem(STORAGE_KEY);
+							const current = saved ? (JSON.parse(saved) as Script[]) : (data as Script[]);
+							const next = current.filter((s) => s.id !== script.id);
+							localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+						} catch {
+							// ignore
+						}
+						navigate("/", { replace: true });
+					}}
+					className="rounded-md border px-3 py-1.5 text-sm text-red-600 hover:bg-red-50"
+				>
+					Remove Script
+				</button>
+			</div>
 			<Card className="mt-4">
 				<CardHeader className="flex-row items-center gap-4">
 					<img
