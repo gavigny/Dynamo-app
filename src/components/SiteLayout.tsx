@@ -11,7 +11,7 @@ export function SiteLayout() {
 						<img src="/logos/gbi.png" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/vite.svg"; }} alt="GBI" className="h-8 w-auto" />
 					</div>
 					<div className="pointer-events-none absolute inset-0 hidden items-center justify-center sm:flex">
-						<span className="text-sm font-medium sm:text-base">GBI</span>
+						<span className="text-sm font-medium sm:text-base">BIM Copilot</span>
 					</div>
 					<div className="flex items-center gap-2">
 						<ThemeToggle />

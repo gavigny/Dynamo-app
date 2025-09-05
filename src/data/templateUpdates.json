@@ -1,0 +1,14 @@
+[
+  { "date": "2025-09-01", "text": "Adjusted project browser organization: views are now grouped by discipline → phase → detail level for easier navigation." },
+  { "date": "2025-08-24", "text": "Updated door families: added a new “Hardware Set” parameter for better scheduling in specifications." },
+  { "date": "2025-08-17", "text": "Revised title block family: added QR code option linking to cloud-hosted PDF set." },
+  { "date": "2025-08-12", "text": "Optimized view templates: coordinated graphics for structural plans to reduce inconsistencies in line weights." },
+  { "date": "2025-08-05", "text": "Created new material library entry for “Architectural Concrete – Polished” with consistent rendering appearance." },
+  { "date": "2025-07-30", "text": "Updated wall type definitions: corrected thermal values in schedules to match new sustainability guidelines." },
+  { "date": "2025-07-22", "text": "Added annotation family for fire-rating tags with automatic link to door and wall parameters." },
+  { "date": "2025-07-15", "text": "Improved mechanical equipment family connectors: corrected flow direction and standardized connector sizes." },
+  { "date": "2025-07-08", "text": "Introduced shared parameters file v2.1: streamlined naming conventions and removed duplicates." },
+  { "date": "2025-07-01", "text": "Fixed default project template units: updated imperial/metric toggle and corrected project north orientation." }
+]
+
+

@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import type { Project } from "@/types";
 import data from "@/data/projects.json";
+import { ChatPanel } from "@/components/ChatPanel";
 
 export default function ProjectDetail() {
 	const { id } = useParams();
@@ -29,7 +30,7 @@ export default function ProjectDetail() {
 					) : null}
 				</h1>
 			</div>
-			<div className="aspect-video w-full overflow-hidden rounded border">
+			<div className="aspect-video w-full overflow-hidden rounded border shadow-sm hover:ring-4 hover:ring-ring">
 				<iframe
 					title={`Speckle ${project.code} - ${project.title}`}
 					src={project.embedUrl}
@@ -38,6 +39,7 @@ export default function ProjectDetail() {
 					allow="fullscreen"
 				/>
 			</div>
+			<ChatPanel project={project} apiUrl={import.meta.env.VITE_CHAT_API_URL} />
 		</div>
 	);
 }

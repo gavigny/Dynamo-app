@@ -57,7 +57,7 @@ export function ScriptCard({ script }: { script: Script }) {
 
 	return (
 		<Link to={`/script/${script.id}`} className="block">
-			<Card className="hover:shadow-md transition-shadow">
+			<Card className="shadow-sm hover:ring-4 hover:ring-ring">
 				<CardHeader className="flex-row items-center gap-4">
 					<img
 						src={candidates[idx]}
