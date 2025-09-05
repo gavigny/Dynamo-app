@@ -118,6 +118,24 @@ export function ChatPanel({ project, apiUrl }: { project: Project; apiUrl?: stri
 			<div className="border-b px-3 py-2">
 				<h2 className="text-sm font-medium">Assistant du projet</h2>
 				<p className="text-xs text-muted-foreground">Discutez à propos de {project.code} - {project.title}</p>
+				{!apiKey && !apiUrl ? (
+					<div className="mt-2 flex items-center gap-2">
+						<input
+							type="password"
+							placeholder="OpenAI API key (sk-...)"
+							value={apiKey}
+							onChange={(e) => setApiKey(e.target.value)}
+							className="w-full rounded-md border px-2 py-1 text-xs"
+						/>
+						<button
+							type="button"
+							onClick={() => localStorage.setItem("openai_api_key", apiKey)}
+							className="inline-flex items-center rounded-md border px-2 py-1 text-xs"
+						>
+							Save
+						</button>
+					</div>
+				) : null}
 			</div>
 			<div ref={scrollRef} className="h-64 overflow-y-auto px-3 py-3">
 				<div className="flex flex-col gap-3">
