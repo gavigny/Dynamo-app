@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Project } from "@/types";
 import { Input } from "@/components/ui/input";
-import { BUILT_IN_OPENAI_API_KEY } from "@/config";
 
 type ChatMessage = {
 	role: "user" | "assistant";
@@ -22,7 +21,6 @@ export function ChatPanel({ project, apiUrl }: { project: Project; apiUrl?: stri
 	useEffect(() => {
 		const saved = localStorage.getItem("openai_api_key") ?? "";
 		if (saved) setApiKey(saved);
-		else if (BUILT_IN_OPENAI_API_KEY) setApiKey(BUILT_IN_OPENAI_API_KEY);
 	}, []);
 
 	// Keep the latest message in view
