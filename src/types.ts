@@ -11,7 +11,9 @@ export type Script = {
 };
 
 export type Project = {
-	id: string; // project number or slug
-	material: "Wood" | "Concrete" | "Steel";
+	id: string; // unique id for routing
+	code: string; // project number (e.g., "141168-00")
+	title: string; // human-friendly title (e.g., "plateau 1")
+	material?: "Wood" | "Concrete" | "Steel"; // optional
 	embedUrl: string; // Speckle embed URL
 };

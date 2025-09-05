@@ -20,11 +20,18 @@ export default function ProjectDetail() {
 		<div className="mx-auto max-w-7xl px-4 py-6">
 			<div className="mb-3 flex items-center justify-between">
 				<Link to="/projects" className="text-sm underline">← Back to projects</Link>
-				<h1 className="text-lg font-semibold">{project.id} · {project.material}</h1>
+				<h1 className="text-lg font-semibold">
+					{project.code} - {project.title}
+					{project.material ? (
+						<>
+							{' '}· {project.material}
+						</>
+					) : null}
+				</h1>
 			</div>
 			<div className="aspect-video w-full overflow-hidden rounded border">
 				<iframe
-					title={`Speckle ${project.id}`}
+					title={`Speckle ${project.code} - ${project.title}`}
 					src={project.embedUrl}
 					className="h-full w-full"
 					frameBorder={0}
